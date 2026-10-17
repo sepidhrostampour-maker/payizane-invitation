@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#251714">
+    <title>پاییزانه | یک دعوت متفاوت</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="falling-leaves" aria-hidden="true"></div>
+
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="پاییزانه">
+            <span class="brand-mark">پ</span>
+            <span class="brand-text">
+                <strong>پاییزانه</strong>
+                <small>AUTUMN INVITATION</small>
+            </span>
+        </a>
+
+        <div class="private-label">
+            <span class="status-dot"></span>
+            یک دعوت خصوصی
+        </div>
+    </header>
+
+    <main class="main-shell">
+
+        <div class="progress-meta">
+            <span id="stepLabel">شروع یک ماجرا</span>
+            <div class="progress-track">
+                <span id="progressBar"></span>
+            </div>
+            <span id="stepCount">خوش آمدی</span>
+        </div>
+
+        <!-- شروع -->
+        <section class="screen active" id="welcome">
+            <div class="panel hero-panel">
+                <div class="hero-copy">
+                    <span class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        نامه‌ای از جنس پاییز
+                    </span>
+
+                    <h1>
+                        بعضی قرارها،
+                        <br>
+                        از یک <em>«بله»</em>
+                        <br>
+                        شروع می‌شن.
+                    </h1>
+
+                    <p class="hero-description">
+                        یک دعوت کوچک، یک انتخاب متفاوت و قراری که
+                        جزئیاتش تا لحظه‌ی آخر، کمی رازآلود می‌مونه.
+                    </p>
+
+                    <button class="button button-primary"
+                            onclick="nextStep('gender')">
+                        <span>شروع دعوت</span>
+                        <span class="button-arrow">←</span>
+                    </button>
+
+                    <div class="hero-footnote">
+                        <span>✳</span>
+                        چند انتخاب ساده تا یک قرار به‌یادماندنی
+                    </div>
+                </div>
+
+                <div class="hero-art">
+                    <div class="art-orbit orbit-one"></div>
+                    <div class="art-orbit orbit-two"></div>
+
+                    <div class="poster-card">
+                        <div class="poster-top">
+                            <span>COLLECTION NO. 01</span>
+                            <span>۲۰۲۶</span>
+                        </div>
+
+                        <svg class="autumn-illustration"
+                             viewBox="0 0 300 340"
+                             role="img"
+                             aria-label="تصویرسازی برگ‌های پاییزی">
+
+                            <defs>
+                                <linearGradient id="posterGlow"
+                                                x1="0" y1="0"
+                                                x2="1" y2="1">
+                                    <stop offset="0" stop-color="#E8B16F"/>
+                                    <stop offset="1" stop-color="#A44E35"/>
+                                </linearGradient>
+                            </defs>
+
+                            <circle cx="150" cy="160" r="108"
+                                    fill="#F0CFA8" opacity=".7"/>
+                            <circle cx="150" cy="160" r="83"
+                                    fill="#D69A65" opacity=".35"/>
+
+                            <path d="M151 294 C143 230 161 159 147 77"
+                                  fill="none" stroke="#6D4936"
+                                  stroke-width="4" stroke-linecap="round"/>
+
+                            <path d="M150 202 C103 190 89 155 94 124
+                                     C127 137 150 163 150 202Z"
+                                  fill="#9B4934"/>
+
+                            <path d="M151 163 C194 154 215 122 212 89
+                                     C177 105 155 130 151 163Z"
+                                  fill="url(#posterGlow)"/>
+
+                            <path d="M150 241 C109 230 78 199 77 171
+                                     C113 179 143 207 150 241Z"
+                                  fill="#C57A45"/>
+
+                            <path d="M151 217 C190 204 220 175 224 146
+                                     C190 154 160 185 151 217Z"
+                                  fill="#773B30"/>
+
+                            <path d="M147 118 C117 100 105 76 115 53
+                                     C142 69 153 91 147 118Z"
+                                  fill="#B9673D"/>
+
+                            <g fill="none" stroke="#F4DDBB"
+                               stroke-width="1.5" opacity=".8">
+                                <path d="M150 202 L107 146"/>
+                                <path d="M151 163 L198 108"/>
+                                <path d="M150 241 L91 190"/>
+                                <path d="M151 217 L209 162"/>
+                                <path d="M147 118 L123 68"/>
+                            </g>
+
+                            <circle cx="150" cy="160" r="119"
+                                    fill="none" stroke="#FFF4E5"
+                                    stroke-width="1" opacity=".6"/>
+                        </svg>
+
+                        <div class="poster-bottom">
+                            <span>یک قرار در هوای خنک</span>
+                            <span class="poster-star">✳</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-note note-top">
+                        <span class="note-symbol">✳</span>
+                        <span>فصل اتفاق‌های قشنگ</span>
+                    </div>
+
+                    <div class="floating-note note-bottom">
+                        <span class="note-number">01</span>
+                        <span>JUST FOR YOU</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- انتخاب جنسیت -->
+        <section class="screen" id="gender">
+            <div class="panel section-panel">
+                <div class="section-heading">
+                    <span class="eyebrow">مرحله‌ی ۰۱ / کاراکتر</span>
+                    <h2>قهرمان این قصه<br><em>کدومه؟</em></h2>
+                    <p>
+                        کاراکترت رو انتخاب کن؛ بعد می‌تونی استایل مخصوص
+                        قرار پاییزی رو براش بسازی.
+                    </p>
+                </div>
+
+                <div class="gender-grid">
+                    <button class="gender-card"
+                            type="button"
+                            onclick="selectGender('female')">
+                        <span class="selection-check">✓</span>
+                        <div class="gender-portrait" id="genderFemaleArt"></div>
+                        <span class="gender-name">دختر</span>
+                        <span class="gender-caption">یک ظاهر اختصاصی</span>
+                    </button>
+
+                    <button class="gender-card"
+                            type="button"
+                            onclick="selectGender('male')">
+                        <span class="selection-check">✓</span>
+                        <div class="gender-portrait" id="genderMaleArt"></div>
+                        <span class="gender-name">پسر</span>
+                        <span class="gender-caption">یک ظاهر اختصاصی</span>
+                    </button>
+                </div>
+
+                <div class="bottom-note">
+                    <span>✳</span>
+                    انتخابت در تمام مراحل همراهت می‌مونه.
+                </div>
+            </div>
+        </section>
+
+        <!-- دعوت -->
+        <section class="screen" id="invite">
+            <div class="panel scene-panel">
+                <div class="scene-copy">
+                    <span class="eyebrow">یک پیشنهاد کوچک</span>
+
+                    <h2>
+                        یه قرار پاییزی؟
+                        <br>
+                        <em>فقط تو و من.</em>
+                    </h2>
+
+                    <p>
+                        کمی هوای خنک، یک جای قشنگ و چند ساعت دور از
+                        شلوغی روزمره. پایه‌ای؟
+                    </p>
+
+                    <div class="answer-area">
+                        <button class="button button-primary"
+                                onclick="nextStep('outfit')">
+                            بله، چرا که نه؟ <span>♥</span>
+                        </button>
+
+                        <button id="noButton"
+                                class="button button-no"
+                                type="button">
+                            نه!
+                        </button>
+                    </div>
+
+                    <span class="subtle-hint">
+                        بعضی جواب‌ها از بعضی سؤال‌ها سخت‌ترن :)
+                    </span>
+                </div>
+
+                <div class="scene-visual">
+                    <div class="character-backdrop"></div>
+                    <div id="inviteCharacter" class="character-stage"></div>
+                    <div class="character-tag">
+                        <span class="tag-dot"></span>
+                        YOUR AUTUMN LOOK
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- انتخاب لباس -->
+        <section class="screen" id="outfit">
+            <div class="panel section-panel">
+                <div class="section-heading">
+                    <span class="eyebrow">مرحله‌ی ۰۲ / استایل</span>
+                    <h2>برای این قرار،<br><em>چی می‌پوشی؟</em></h2>
+                    <p>
+                        یکی از هشت استایل رو انتخاب کن و تغییر ظاهر
+                        کاراکترت رو ببین.
+                    </p>
+                </div>
+
+                <div class="outfit-layout">
+                    <div class="outfit-preview">
+                        <span class="preview-label">LIVE PREVIEW</span>
+                        <div id="outfitCharacter" class="character-stage"></div>
+                        <div class="selected-look">
+                            <span id="lookDot" class="look-dot"></span>
+                            <span id="lookName">استایلت رو انتخاب کن</span>
+                        </div>
+                    </div>
+
+                    <div class="outfit-options">
+                        <button class="outfit-option" data-outfit="angel"
+                                onclick="selectOutfit('angel')">
+                            <span class="outfit-icon">✧</span>
+                            <span><strong>فرشته</strong><small>روشن و رؤیایی</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+
+                        <button class="outfit-option" data-outfit="devil"
+                                onclick="selectOutfit('devil')">
+                            <span class="outfit-icon">♨</span>
+                            <span><strong>شیطان</strong><small>جسور و آتشین</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+
+                        <button class="outfit-option" data-outfit="sport"
+                                onclick="selectOutfit('sport')">
+                            <span class="outfit-icon">↗</span>
+                            <span><strong>اسپورت</strong><small>راحت و پرانرژی</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+
+                        <button class="outfit-option" data-outfit="formal"
+                                onclick="selectOutfit('formal')">
+                            <span class="outfit-icon">◇</span>
+                            <span><strong>رسمی</strong><small>مرتب و شیک</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+
+                        <button class="outfit-option" data-outfit="casual"
+                                onclick="selectOutfit('casual')">
+                            <span class="outfit-icon">○</span>
+                            <span><strong>کژوال</strong><small>ساده و امروزی</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+
+                        <button class="outfit-option" data-outfit="autumn"
+                                onclick="selectOutfit('autumn')">
+                            <span class="outfit-icon">✳</span>
+                            <span><strong>پاییزی</strong><small>گرم و دلنشین</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+
+                        <button class="outfit-option" data-outfit="royal"
+                                onclick="selectOutfit('royal')">
+                            <span class="outfit-icon">♛</span>
+                            <span><strong>سلطنتی</strong><small>خاص و باشکوه</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+
+                        <button class="outfit-option" data-outfit="mysterious"
+                                onclick="selectOutfit('mysterious')">
+                            <span class="outfit-icon">◐</span>
+                            <span><strong>مرموز</strong><small>سرد و رازآلود</small></span>
+                            <span class="option-arrow">↖</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="button button-primary"
+                            id="outfitNext"
+                            onclick="nextStep('place')"
+                            disabled>
+                        انتخاب این استایل <span>←</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- مکان -->
+        <section class="screen" id="place">
+            <div class="panel section-panel">
+                <div class="section-heading">
+                    <span class="eyebrow">مرحله‌ی ۰۳ / مقصد</span>
+                    <h2>قرارمون رو<br><em>کجا تصور می‌کنی؟</em></h2>
+                    <p>حس‌و‌حال مورد علاقه‌ات رو انتخاب کن؛ آدرس نهایی فعلاً راز می‌مونه.</p>
+                </div>
+
+                <div class="place-grid">
+                    <button class="place-card" onclick="selectPlace('کافه')">
+                        <span class="place-art cafe-art">
+                            <svg viewBox="0 0 100 90" aria-hidden="true">
+                                <path d="M25 33 H69 V61 Q68 74 48 74 Q27 73 25 61Z" fill="#E9B985"/>
+                                <path d="M69 40 H79 Q89 42 84 54 Q81 61 69 59" fill="none" stroke="#E9B985" stroke-width="5"/>
+                                <path d="M21 31 H73" stroke="#FFF0D9" stroke-width="4" stroke-linecap="round"/>
+                                <path d="M34 20 C26 12 39 9 33 2 M48 20 C40 12 54 8 48 1 M60 20 C53 12 66 9 61 3" fill="none" stroke="#F0C59A" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <strong>کافه‌ی دنج</strong>
+                        <small>قهوه‌ی گرم و گفت‌وگوی طولانی</small>
+                        <span class="card-arrow">↖</span>
+                    </button>
+
+                    <button class="place-card" onclick="selectPlace('رستوران')">
+                        <span class="place-art restaurant-art">
+                            <svg viewBox="0 0 100 90" aria-hidden="true">
+                                <circle cx="50" cy="43" r="27" fill="#E9B985"/>
+                                <circle cx="50" cy="43" r="20" fill="none" stroke="#80503A" stroke-width="2"/>
+                                <circle cx="50" cy="43" r="12" fill="#F8E4C6"/>
+                                <path d="M17 22 V60 M10 22 V36 M17 22 V36 M24 22 V36 M17 60 V77" fill="none" stroke="#E9B985" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M80 22 V77 M80 22 Q69 31 72 48 Q74 54 80 54" fill="none" stroke="#E9B985" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <strong>رستوران</strong>
+                        <small>یک شام خوش‌مزه و آرام</small>
+                        <span class="card-arrow">↖</span>
+                    </button>
+
+                    <button class="place-card" onclick="selectPlace('پارک')">
+                        <span class="place-art park-art">
+                            <svg viewBox="0 0 100 90" aria-hidden="true">
+                                <path d="M50 38 V79" stroke="#845039" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M50 7 C27 13 21 32 37 45 C21 46 24 64 42 65 H59 C78 61 78 43 63 42 C81 24 67 9 50 7Z" fill="#B65A3D"/>
+                                <path d="M15 79 H85" stroke="#D9A16A" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <strong>پارک پاییزی</strong>
+                        <small>قدم‌زدن میان برگ‌های نارنجی</small>
+                        <span class="card-arrow">↖</span>
+                    </button>
+
+                    <button class="place-card" onclick="selectPlace('مکان گردشگری')">
+                        <span class="place-art travel-art">
+                            <svg viewBox="0 0 100 90" aria-hidden="true">
+                                <path d="M15 75 L36 22 L48 52 L61 14 L86 75Z" fill="#C17B50"/>
+                                <path d="M36 22 L42 38 L34 34Z M61 14 L70 34 L60 30Z" fill="#F6DDB9"/>
+                                <path d="M13 76 H88" stroke="#F2C892" stroke-width="4" stroke-linecap="round"/>
+                                <circle cx="20" cy="18" r="7" fill="#E4A76B"/>
+                            </svg>
+                        </span>
+                        <strong>مکان گردشگری</strong>
+                        <small>یک کشف تازه در شهر</small>
+                        <span class="card-arrow">↖</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- راز مکان -->
+        <section class="screen" id="mystery">
+            <div class="panel mystery-panel">
+                <div class="confidential-stamp">CLASSIFIED · فقط برای تو</div>
+
+                <div class="mystery-emblem">
+                    <div class="emblem-ring"></div>
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <path d="M28 43 V32 C28 3 72 3 72 32 V43"
+                              fill="none" stroke="#E7B77E" stroke-width="5"
+                              stroke-linecap="round"/>
+                        <rect x="20" y="40" width="60" height="47" rx="10"
+                              fill="#D89A61"/>
+                        <circle cx="50" cy="59" r="6" fill="#39221A"/>
+                        <path d="M50 64 V73" stroke="#39221A"
+                              stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <span class="eyebrow">یک راز کوچک</span>
+                <h2>مقصد واقعی؟<br><em>فعلاً محرمانه.</em></h2>
+                <p>
+                    انتخابت ثبت شد؛ اما بخش جذاب ماجرا هنوز مونده.
+                    مکان دقیق قرار در پیام بعدی باهات به اشتراک گذاشته می‌شه.
+                </p>
+
+                <div class="mystery-ticket">
+                    <span>DESTINATION</span>
+                    <span class="ticket-dashes"></span>
+                    <strong>به‌زودی مشخص می‌شود</strong>
+                </div>
+
+                <button class="button button-primary"
+                        onclick="nextStep('gift')">
+                    راز رو قبول دارم <span>←</span>
+                </button>
+
+                <small class="disclaimer">
+                    پیامک خودکار در این نسخه هنوز فعال نیست.
+                </small>
+            </div>
+        </section>
+
+        <!-- هدیه -->
+        <section class="screen" id="gift">
+            <div class="panel section-panel">
+                <div class="section-heading">
+                    <span class="eyebrow">مرحله‌ی ۰۴ / یک یادگاری</span>
+                    <h2>اگه یک هدیه باشه،<br><em>کدوم رو انتخاب می‌کنی؟</em></h2>
+                    <p>قرار نیست انتخاب سختی باشه؛ فقط کنجکاویم سلیقه‌ات رو بدونیم.</p>
+                </div>
+
+                <div class="gift-grid">
+                    <button class="gift-card" onclick="selectGift('گل')">
+                        <span class="gift-art flower-art">
+                            <svg viewBox="0 0 130 130" aria-hidden="true">
+                                <path d="M64 70 C63 89 64 105 68 118"
+                                      stroke="#8C9A62" stroke-width="4" fill="none"/>
+                                <path d="M65 96 C44 80 36 98 63 104"
+                                      fill="#8C9A62"/>
+                                <path d="M68 105 C87 87 99 103 70 113"
+                                      fill="#687C51"/>
+                                <g transform="translate(64 48)">
+                                    <ellipse cy="-22" rx="12" ry="21" fill="#C65C48"/>
+                                    <ellipse cy="22" rx="12" ry="21" fill="#C65C48"/>
+                                    <ellipse cx="-22" rx="21" ry="12" fill="#D17B5D"/>
+                                    <ellipse cx="22" rx="21" ry="12" fill="#D17B5D"/>
+                                    <ellipse cx="-16" cy="-16" rx="12" ry="18" transform="rotate(-45 -16 -16)" fill="#E6A27D"/>
+                                    <ellipse cx="16" cy="-16" rx="12" ry="18" transform="rotate(45 16 -16)" fill="#E6A27D"/>
+                                    <circle r="11" fill="#E4B56D"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <strong>یک شاخه گل</strong>
+                        <small>لطیف، ساده و ماندگار</small>
+                        <span class="gift-select">انتخاب گل ←</span>
+                    </button>
+
+                    <button class="gift-card" onclick="selectGift('شکلات')">
+                        <span class="gift-art chocolate-art">
+                            <svg viewBox="0 0 130 130" aria-hidden="true">
+                                <g transform="translate(65 64) rotate(-10)">
+                                    <rect x="-38" y="-31" width="76" height="62" rx="7" fill="#63372D"/>
+                                    <rect x="-31" y="-24" width="62" height="48" rx="4" fill="#8B5141"/>
+                                    <path d="M-10 -24 V24 M10 -24 V24 M-31 0 H31"
+                                          stroke="#C68D68" stroke-width="2" opacity=".8"/>
+                                    <path d="M-38 -31 L-24 -43 L52 -43 L38 -31"
+                                          fill="#D9AD79"/>
+                                    <path d="M38 -31 L52 -43 V19 L38 31"
+                                          fill="#A76C50"/>
+                                </g>
+                                <path d="M30 24 L44 34 L30 44 L16 34Z" fill="#E6BE86"/>
+                                <path d="M93 91 L104 99 L93 107 L82 99Z" fill="#E6BE86"/>
+                            </svg>
+                        </span>
+                        <strong>شکلات</strong>
+                        <small>یک انتخاب شیرین</small>
+                        <span class="gift-select">انتخاب شکلات ←</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- اطلاعات تماس -->
+        <section class="screen" id="info">
+            <div class="panel form-panel">
+                <div class="form-intro">
+                    <span class="eyebrow">مرحله‌ی ۰۵ / پایان دعوت</span>
+                    <h2>یک اسم برای<br><em>این خاطره.</em></h2>
+                    <p>
+                        اطلاعاتت رو وارد کن تا دعوتنامه تکمیل بشه.
+                        شماره فقط باید برای هدف مشخص‌شده استفاده بشه.
+                    </p>
+
+                    <div class="privacy-note">
+                        <span>◇</span>
+                        قبل از ارسال اطلاعات، مطمئن شو می‌دونی
+                        چه کسی و برای چه منظوری اون‌ها رو دریافت می‌کنه.
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="finishInvitation(event)">
+                    <label for="firstName">نام</label>
+                    <input id="firstName" name="firstName"
+                           type="text" autocomplete="given-name"
+                           placeholder="نامت رو بنویس" required>
+
+                    <label for="lastName">نام خانوادگی</label>
+                    <input id="lastName" name="lastName"
+                           type="text" autocomplete="family-name"
+                           placeholder="نام خانوادگی‌ات" required>
+
+                    <label for="phone">شماره موبایل</label>
+                    <input id="phone" name="phone"
+                           type="tel" inputmode="tel" autocomplete="tel"
+                           placeholder="شماره موبایل" required>
+
+                    <button class="button button-primary submit-button"
+                            type="submit">
+                        تکمیل دعوتنامه <span>←</span>
+                    </button>
+
+                    <p class="form-fineprint">
+                        این نسخه هنوز به سرویس ارسال اطلاعات متصل نشده است.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- پایان -->
+        <section class="screen" id="final">
+            <div class="panel final-panel">
+                <div class="final-spark">✳</div>
+                <div id="finalCharacter" class="character-stage final-character"></div>
+                <span class="eyebrow">THE INVITATION</span>
+                <h2>یک قرار،<br><em>یک شروع تازه.</em></h2>
+                <p id="finalMessage">
+                    پیش‌نمایش دعوتنامه تکمیل شد.
+                </p>
+                <div class="final-details" id="finalDetails"></div>
+                <button class="button button-primary"
+                        onclick="restartInvitation()">
+                    از اول ببینیم <span>↻</span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <span>پاییزانه</span>
+        <span class="footer-divider"></span>
+        <span>ساخته‌شده برای یک قرار متفاوت</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
